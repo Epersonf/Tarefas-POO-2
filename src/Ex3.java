@@ -1,5 +1,3 @@
-import java.sql.Date;
-
 import me.br.classes.Ex3Classes.Conta;
 
 public class Ex3 {
@@ -14,6 +12,6 @@ public class Ex3 {
 	 */
 	
 	public static void main(String[] args) {
-		
+		Conta conta = new Conta("Albert", 333, "a", 0, null);
 	}
 }

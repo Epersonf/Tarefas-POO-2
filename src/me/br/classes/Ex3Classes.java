@@ -9,13 +9,15 @@ public class Ex3Classes {
 		String agencia;
 		float saldo;
 		Date dataAbertura;
+		float rendimentoCoeficiente;
 		
-		Conta(String nomeTitular, int numero, String agencia, float saldo, Date dataAbertura) {
+		public Conta(String nomeTitular, int numero, String agencia, float saldo, Date dataAbertura) {
 			this.nomeTitular = nomeTitular;
 			this.numero = numero;
 			this.agencia = agencia;
 			this.saldo = saldo;
 			this.dataAbertura = dataAbertura;
+			rendimentoCoeficiente = .1f;
 		}
 		
 		public void sacar(float v) {
@@ -27,8 +29,8 @@ public class Ex3Classes {
 			saldo += v;
 		}
 		
-		public void calculaRendimento() {
-			saldo += saldo * 0.13f/100; 
+		public float calculaRendimento() {
+			return saldo * rendimentoCoeficiente; 
 		}
 		
 	}
